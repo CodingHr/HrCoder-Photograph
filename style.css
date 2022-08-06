@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll styling start here */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #989898;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #353535;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5e6801;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+/* Navbar styling start here */
+.navbar {
+    background: #3222114a;
+    position: fixed;
+    max-height: 60px;
+    width: 100%;
+    z-index: 5;
+    padding: 10px 0;
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    background: #6d7601;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
+    transition: all 0.7s ease;
+}
+
+.navbar.sticky .icon.cancel-btn {
+    top: 10px;
+}
+
+.navbar.sticky .menu-list li a:hover {
+    color: #000;
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    margin: auto;
+    max-width: 1250px;
+    padding: 0 20px;
+}
+
+.navbar .logo a {
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navbar .logo a span {
+    color: #fbff00;
+}
+
+.navbar .menu-list {
+    display: inline-flex;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+    color: #fbff00;
+}
+
+/* Social-icon styling start here */
+.icon-list {
+    position: fixed;
+    width: 45px;
+    margin-top: 120px;
+}
+
+.icon-list li {
+    height: 40px;
+    position: relative;
+    /* padding-top: 1px; */
+}
+
+.icon-list li a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 40px;
+    padding-left: 30%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    transition: all .3s linear;
+    border-radius: 0 50px 50px 0;
+}
+
+.icon-list li:nth-child(1) a {
+    background: #4267B2;
+    border: none;
+}
+
+.icon-list li:nth-child(2) a {
+    background: #1DA1F2;
+    border: none;
+}
+
+.icon-list li:nth-child(3) a {
+    background: #2867B2;
+    border: none;
+}
+
+.icon-list li:nth-child(4) a {
+    background: #333;
+    border: none;
+}
+
+.icon-list li:nth-child(5) a {
+    /* background-image: linear-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5); */
+    background-image: linear-gradient(#4f5bd5, #962fbf, #d62976, #f88c39, #feda75);
+    border: none;
+}
+
+.icon-list li:nth-child(6) a {
+    background: #FF0000;
+    border: none;
+}
+
+.icon-list li a i {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 22px;
+}
+
+.icon-list li a span {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 10px;
+    display: none;
+}
+
+.icon-list a:hover {
+    z-index: 1;
+    width: 130px;
+    /* box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3); */
+}
+
+.icon-list li a:hover span {
+    display: block;
+    padding-left: 30%;
+    transition: all .3s ease-in;
+}
+
+/* Home styling start here */
+.home {
+    height: 100vh;
+    background: url('img/banner2.jpeg') no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.max-width {
+    padding: 220px 0;
+    max-width: 1250px;
+    margin: auto;
+    height: 50vh;
+    width: 100%;
+}
+
+.home .home-left {
+    text-align: center;
+}
+
+.home-left .article {
+    color: #fff;
+}
+
+
+.home-left .article h2 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.home-left .article p {
+    font-size: 18px;
+    font-weight: 400;
+    background: #0a18164d;
+    /* padding: 10px; */
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.home-left .article p strong {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #fbff00;
+}
+
+/* Btn styling start here */
+.button {
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000000;
+    padding: 1px 15px;
+    background: #c58c74ad;
+    border: 3px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: none;
+    color: #fff;
+    border-color: #fbff00;
+}
+
+/* About styling start here */
+.about {
+    padding: 40px 0;
+    background: url('img/banner.jpg') no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about .title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 10px;
+}
+
+.about p {
+    padding-top: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0px 50px;
+}
+
+.icon {
+    color: #fff;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.icon.cancel-btn {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+}
+
+.icon.menu-btn {
+    position: relative;
+    right: 5px;
+}
+
+/* Footer styling start here */
+footer {
+    background: #5e6801;
+    padding: 15px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width:840px) {
+    .navbar .menu-list {
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        display: block;
+        background: #222;
+        width: 100%;
+        max-width: 300px;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+    .icon-list li a {
+        display: none;
+    }
+
+    .home-left .article h2 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+
+    .navbar .menu-list.active {
+        left: 0%;
+    }
+
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+
+    .menu-list li a {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+}
